@@ -2,7 +2,6 @@
 title: API Reference
 
 language_tabs:
-  - shell
   - ruby
   - python
   - javascript
@@ -41,12 +40,6 @@ import kittn
 api = kittn.authorize('meowmeowmeow')
 ```
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
-
 ```javascript
 const kittn = require('kittn');
 
@@ -81,11 +74,6 @@ import kittn
 
 api = kittn.authorize('meowmeowmeow')
 api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
 ```
 
 ```javascript
@@ -149,11 +137,6 @@ api = kittn.authorize('meowmeowmeow')
 api.kittens.get(2)
 ```
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
 ```javascript
 const kittn = require('kittn');
 
@@ -186,4 +169,3 @@ This endpoint retrieves a specific kitten.
 Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to retrieve
-
